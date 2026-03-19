@@ -132,7 +132,7 @@ int main( )
         dog.Draw(shader);
 
         model = glm::translate(model, glm::vec3(0.0f, 3.0f, 2.0f));
-        model = glm::scale(model, glm::vec3(4.0f, 4.0f, 3.0f));
+        model = glm::scale(model, glm::vec3(4.0f, 12.0f, 3.0f));
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         dog.Draw(shader);
 
